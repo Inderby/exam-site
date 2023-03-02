@@ -5,7 +5,8 @@ dependencies {
 
     testRuntimeOnly("com.h2database:h2")
 
-    compileOnly(project(":comp-paper-user"))
-    testCompileOnly(project(":comp-paper-user").sourceSets.test.output)
+
+    implementation(project(":comp-paper-user"))
+    testImplementation(project(":comp-paper-user").sourceSets.test.output)
 }
 
