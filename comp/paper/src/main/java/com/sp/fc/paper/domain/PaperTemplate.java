@@ -37,7 +37,7 @@ public class PaperTemplate {
 
     private long publishedCount;
 
-    private long compeletCount;
+    private long completeCount;
 
     @Column(updatable = false)
     private LocalDateTime created;
