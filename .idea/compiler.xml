@@ -7,8 +7,10 @@
         <processorPath useClasspath="false">
           <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.projectlombok/lombok/1.18.16/6dc192c7f93ec1853f70d59d8a6dcf94eb42866/lombok-1.18.16.jar" />
         </processorPath>
-        <module name="exam-site.comp-paper-user.test" />
+        <module name="exam-site.comp-paper.main" />
+        <module name="exam-site.comp-paper.test" />
         <module name="exam-site.comp-paper-user.main" />
+        <module name="exam-site.comp-paper-user.test" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="11" />
