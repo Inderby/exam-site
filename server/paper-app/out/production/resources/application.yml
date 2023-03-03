@@ -1,0 +1,34 @@
+server:
+  port: 9060
+
+
+spring:
+
+  jpa:
+    database: mysql   # 추가 해준 부분
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect # 추가 해준 부분
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/exam_db?serverTimezone=Asia/Seoul
+    username: inderby
+    password: aksen8253?
+
+  devtools:
+    livereload:
+      enabled: true
+    restart:
+      enabled: true
+
+  thymeleaf:
+    prefix: classpath:/templates/
+    cache: false
+    check-template-location: true
+    suffix: .html
+
+logging:
+  level:
+    org.springframework.web: trace

@@ -5,6 +5,11 @@
     <title>Title</title>
 </head>
 <body>
-<h4>welcome <span th:text="${name}">name</span></h4>
+
+<block th:fragment="namecard">
+  <div>namecard</div>
+  <div> <span th:text="${name}"> name </span></div>
+</block>
+
 </body>
 </html>
