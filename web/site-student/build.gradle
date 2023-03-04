@@ -4,3 +4,12 @@ dependencies {
 
 }
 
+apply from: "../web-common.gradle"
+
+dependencies {
+
+    implementation(project(":comp-paper"))
+    implementation(project(":comp-paper-user"))
+}
+
+
