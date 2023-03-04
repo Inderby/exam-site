@@ -3,9 +3,11 @@ package com.sp.fc.paper.service;
 import com.sp.fc.paper.domain.PaperTemplate;
 import com.sp.fc.paper.domain.Problem;
 import com.sp.fc.paper.repository.PaperTemplateRepository;
+import com.sp.fc.user.domain.User;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -84,6 +86,7 @@ public class PaperTemplateService {
             if(pt.getProblemList().size() != pt.getTotal()){ // lazy 해결위해 체크...
                 pt.setTotal(pt.getProblemList().size());
             }
+//            if(pt.getUserId() != ((User) SecurityContextHolder.getContext().getAuthentication().getPrincipal().getUserId))
             return pt;
         });
     }
