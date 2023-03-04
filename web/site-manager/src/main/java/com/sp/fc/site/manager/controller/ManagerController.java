@@ -9,6 +9,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class ManagerController {
     @GetMapping({"","/"})
     public String index(){
-        return "manager/index";
+        return "/manager/index";
     }
 }
