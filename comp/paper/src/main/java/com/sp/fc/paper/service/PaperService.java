@@ -6,13 +6,13 @@ import com.sp.fc.paper.repository.PaperAnswerRepository;
 import com.sp.fc.paper.repository.PaperRepository;
 import com.sp.fc.paper.repository.PaperTemplateRepository;
 import com.sp.fc.user.repository.UserRepository;
+import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.security.core.parameters.P;
 import org.springframework.stereotype.Service;
 
-import javax.transaction.Transactional;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;

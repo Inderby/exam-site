@@ -2,10 +2,10 @@ package com.sp.fc.user.service;
 
 import com.sp.fc.user.domain.School;
 import com.sp.fc.user.repository.SchoolRepository;
+import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
-import javax.transaction.Transactional;
 import java.time.LocalDateTime;
 import java.util.List;
 import java.util.Optional;
