@@ -157,6 +157,6 @@ public class TeacherController {
             @AuthenticationPrincipal User user, Model model
     ){
 
-        return "redirect:/teacher/paperTemplate/list.html";
+        return "redirect:/teacher/paperTemplate/list";
     }
 }

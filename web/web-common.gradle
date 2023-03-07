@@ -3,8 +3,9 @@
 dependencies {
     implementation("$boot:spring-boot-starter-web")
     implementation("$boot:spring-boot-starter-thymeleaf")
-    implementation("org.thymeleaf.extras:thymeleaf-extras-springsecurity5")
+    implementation group: 'org.thymeleaf.extras', name: 'thymeleaf-extras-springsecurity5', version: '3.0.4.RELEASE'
     implementation("nz.net.ultraq.thymeleaf:thymeleaf-layout-dialect")
+    implementation 'com.google.code.findbugs:jsr305:3.0.2'
 
     // for paging
     implementation("org.springframework.data:spring-data-commons")
